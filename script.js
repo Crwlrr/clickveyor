@@ -123,8 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
             efficiencyUpgradeButton.style.display = 'block';
         }
 
-        if (efficiencyUpgradeCost > 100, handCrankEfficiencyModifier < 5) {
-            handCrankEfficiencyUpgradeButton.style.display = 'block';
+        if (efficiencyUpgradeCost > 100) {
+            if (handCrankEfficiencyModifier < 5){
+                handCrankEfficiencyUpgradeButton.style.display = 'block';
+            }
         }
     }
 
